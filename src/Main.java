@@ -7,13 +7,6 @@ import java.util.Scanner;
 public class Main {
     public static List<Car> cars = new ArrayList<Car>();
     public static Scanner scanner = new Scanner(System.in);
-    private static final char CAPITAL_A = 'A';
-
-    private static final char CAPITAL_Z = 'Z';
-
-    private static final char SMALL_A = 'a';
-
-    private static final char SMALL_Z = 'z';
     private static int CESAR_STEP = 0; //9
 
     public static void main(String[] args) {
@@ -133,13 +126,5 @@ public class Main {
 
         System.out.println("Bye Bye");
         System.out.println("Plik zaszyfrowany zapamietaj step: " + CESAR_STEP);
-    }
-
-    public boolean isLetter(char c) {
-        return (64 < c && c < 91) || (96 < c && c < 123);
-    }
-
-    public boolean exceedRange(byte cByte) {
-        return !isLetter((char) cByte);
     }
 }

@@ -71,13 +71,6 @@ public class Car implements Serializable {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "colour='" + colour + '\'' +
-                ", price=" + price +
-                ", doors=" + doors +
-                ", mark='" + mark + '\'' +
-                ", odometer=" + odometer +
-                ", year=" + year +
-                '}';
+        return "Samochód{" + "kolor='" + colour + '\'' + ", cena=" + price + ", liczba drzwi=" + doors + ", marka='" + mark + '\'' + ", przebieg=" + odometer + ", rocznik=" + year + '}';
     }
 }
